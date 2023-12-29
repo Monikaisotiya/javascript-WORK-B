@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time interval </title>.
+    <style>
+        .box {
+            background-color: palevioletred;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- two type of interval -->
+    <!-- [1] settimeout -->
+    <!-- [2] setinterval-->
+    <div class="box" id="box">
+        <h1 id="ineer">0</h1>
+    </div>
+
+    <script>
+        // set time out function ma jetli secound mukiye tena p6i function ans call thase 
+        // [1]   setTimeout
+
+        // setTimeout(() => {
+        //     console.log(6);
+        //     document.getElementById('head').innerHTML = 'after 3 secound i m printed'
+        // }, 3000);
+
+        // [2] setinterval
+        //   [1]
+        // setInterval(() => {
+        //     console.log('hiiiii');
+
+        // }, 5000);
+
+        // [2] setinterval
+
+        var i = 0
+        var color = ['red', 'green', 'pink', 'yellow', 'brown', 'teal', 'marron', 'balck', 'violet', 'grey']
+        var id = setInterval(() => {
+            // document.getElementById('head').innerText = i
+            document.getElementById('ineer').innerText = i
+            document.body.style.backgroundColor = color[i]
+            if (i == 10) {
+                clearInterval(id)
+            }
+            i++
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

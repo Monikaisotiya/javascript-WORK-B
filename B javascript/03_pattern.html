@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ex: 1
+
+        //   pattern 1 
+
+        for (let i = 1; i < 7; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("*")
+            }
+            document.write('<br>')
+        }
+
+
+
+        ex: 2
+
+        // pattern 2 
+
+
+
+        for (let i = 1; i < 7; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("M")
+            }
+            document.write('<br/    >')
+        }
+
+        ex: 3
+
+        // pattern 3 
+
+        let n = 1
+        for (let i = 1; i < 7; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(n)
+                n++
+            }
+            document.write('<br/>')
+
+        }
+
+        ex: 4
+
+        // pattern 4
+        // asci(alphabets) A - Z code(code start with 65 to 90)
+
+        let str = 65
+        for (let i = 1; i <= 7; i++) {
+            for (let j = 1; j < i; j++) {
+                document.write(String.fromCharCode(str))
+                str++
+            }
+            document.write("<br/>")
+        }
+
+
+        ex: 5
+        // pattern 5 
+
+        let bum = 5;
+        let string = "";
+        for (let i = 0; i < 1; i++) {
+            for (let k = 0; k < n - i; k++) {
+                string += "*";
+            }
+
+            console.log(string);
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

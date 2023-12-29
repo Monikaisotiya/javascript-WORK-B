@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- event  of java script -->
+</head>
+
+<body>
+
+  <!-- two type of event  -->
+  <!-- [i] keyboard -->
+  <!-- [ii] mouse -->
+
+
+
+  <!-- [1]  onclick event-->
+  <!-- niche ni 3 rite onclick event check kri skay  -->
+  <!-- 
+     <button onclick="print()" >click me</button>
+    <script>
+
+    function print() {
+        alert('hiii')
+       console.log("hello");
+        document.body.style.backgroundColor = 'pink'
+    }
+    </script>  -->
+
+
+  <!-- [2] ondblclick   -->
+
+  <!-- <button ondblclick="changecolor()">change me </button>
+    <script>
+   function changecolor() {
+        document.body.style.backgroundColor = 'purple'
+      } 
+    </script> -->
+
+
+  <!-- [3] [4] onmouseover event -->
+
+  <!-- NOTE:  function ma je perameaters pass kariye te html code(button) ni ander te j perameeter pass karvna tema event compalsary lakhvi to j event work karse -->
+
+
+  <!-- <button onmouseleave="leavemouse(event)" onmouseover="mouseover(event)"> mouse over </button>
+ <script>
+    function mouseover(a) {
+        console.log(a)
+        a.target.style.backgroundColor = 'red'
+        console.log(a)
+      }
+
+      function leavemouse(e) {
+        setTimeout(() =>{
+            e.target.style.backgroundColor = 'yellow'
+        },1000)
+      }
+ </script> -->
+
+  <!-- [5] oncontext menu -->
+
+  <!-- <button oncontextmenu="buttonwidth(event)"> mouse right click </button>
+<script>
+    function  buttonwidth(e) {
+        e.target.style.width ='400px'
+        e.target.style.backgroundColor = 'green'
+        e.target.style.color = 'white'
+        
+    }
+</script> -->
+
+
+  <!-- [6] on mouse down [7] on mouse up  -->
+  <!-- 
+<button onmouseup="mouseup(event)" onmousedown="mousedown(event)"> mouse </button>
+<script>
+    function mousedown(e) {
+  e.target.style.fontWeight ='200'
+  e.target.style.backgroundColor ='red'
+        
+    }
+    function mouseup(e) {
+        e.target.style.fontwidth ='100'
+        e.target.style.color ='green'
+        e.target.style.fontwidth ='200px'
+    
+    }
+</script> -->
+
+  <!-- [8] preeskey -->
+
+
+
+  <!-- <button onclick="presskey(event)">Click me</button>
+<script>
+  function presskey(e) {
+    if (e.altKey) {
+      alert('alret key is pressed')
+    }
+  }
+</script>  -->
+
+</body>
+
+</html>

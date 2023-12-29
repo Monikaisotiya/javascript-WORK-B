@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .hm-spinner {
+      height: 115px;
+      width: 115px;
+      border: 6px solid transparent;
+      border-top-color: #9C27B0;
+      border-bottom-color: #9C27B0;
+      border-radius: 50%;
+      position: relative;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+    }
+
+    .hm-spinner::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      border: 6px solid transparent;
+      border-top-color: #BA68C8;
+      border-bottom-color: #BA68C8;
+      border-radius: 50%;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="hm-spinner" id="loader2">
+
+  </div>
+
+
+  <div class="main" id="main" style="display: none;">
+    <div class="menu">
+      <h1>
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">CONTACT</a>
+        <a href="">LOGIN</a>
+        <a href="01_loader.html"> back </a>
+      </h1>
+      <p style="background-color: black; color:antiquewhite">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Minus in cumque
+        necessitatibus aut adipisci nesciunt
+        sit inventore minima vel aliquid enim, libero, dolore iste labore nisi impedit earum veritatis voluptates
+        dolores illo tenetur unde vero ad! Asperiores similique dicta quidem culpa dolores voluptas laboriosam, fugit
+        ipsam dolorem vel quisquam voluptate ad molestias? Atque dolore quod similique veritatis illo, pariatur labore
+        inventore fuga excepturi ea aperiam, maxime sed voluptatibus. Quaerat hic dolores tempora maiores impedit
+        praesentium, alias porro nostrum omnis nulla sequi doloribus voluptatibus maxime necessitatibus sit molestias
+        animi non voluptas minus corrupti atque suscipit saepe assumenda similique. Magnam nulla modi ullam pariatur
+        quis quaerat perferendis assumenda! Alias animi vel vero ipsa. Vel a molestias, error, hic dignissimos nisi
+        dolores ullam dolore sint est fugiat ipsa sequi quo officia exercitationem aperiam voluptatibus necessitatibus
+        obcaecati atque, nam molestiae eius magni! Commodi nesciunt ut, deserunt, facilis sed, ullam minus reprehenderit
+        nam excepturi sint voluptas autem aspernatur iusto vel! Iure vel omnis provident sapiente natus quos perferendis
+        nam aut eos ut a pariatur, dolores aliquid commodi quo architecto facere voluptatum dolore laboriosam rerum illo
+        ea iste fugit distinctio! Sapiente fugiat praesentium accusantium minus molestiae necessitatibus delectus
+        placeat. Nihil aliquam ipsum eos commodi reprehenderit repellat laborum deleniti enim, culpa facilis sunt
+        dolorum libero animi officiis id esse ducimus, magni cumque quisquam fuga nemo perspiciatis dolor incidunt!
+        Repudiandae, aspernatur possimus fugit facilis et eius commodi voluptatum enim quibusdam minima iure eum alias
+        non adipisci blanditiis optio temporibus, a obcaecati ullam velit doloribus illum aut sint perspiciatis!
+        Voluptates nesciunt nostrum modi repudiandae quas odit cupiditate atque, doloremque ipsum quia, porro possimus
+        voluptatibus cumque optio exercitationem accusantium fugit nulla culpa necessitatibus dicta voluptas quasi?
+        Autem voluptatibus neque inventore dolor, nostrum minus at? Tenetur iusto quidem doloremque sequi! Ex error
+        beatae, laudantium velit veniam laboriosam quam accusamus necessitatibus enim nesciunt quo voluptatibus facere
+        reprehenderit ad doloremque, repellendus pariatur quas iure deleniti commodi iusto? Aliquam vel, officia
+        assumenda officiis placeat aperiam in voluptatibus accusamus odit obcaecati ipsa quasi! Doloribus temporibus
+        quas tempore odit laudantium, sapiente asperiores nemo molestias natus modi eligendi, ipsum recusandae
+        cupiditate ducimus vel in explicabo dolorum quam, sunt itaque nesciunt. Vitae rem dignissimos, corporis modi
+        sint nesciunt magni. Amet commodi vitae provident iste impedit, iure placeat ex vero modi soluta, repellendus
+        temporibus et harum sequi natus officiis beatae inventore assumenda incidunt unde quos, pariatur aliquid
+        exercitationem accusantium! Mollitia quidem facilis voluptates repellendus a maxime magnam accusamus molestias
+        aut earum optio dolor ullam accusantium quaerat iste perferendis quam, cum, voluptatem eveniet. Sint sed
+        molestiae illum unde natus temporibus voluptatem animi nesciunt mollitia, ipsum aliquid modi facere ipsam,
+        suscipit pariatur ratione vel ut et officia quisquam! Eos et nulla vel adipisci alias nobis sint quos magni ad.
+        Magni earum asperiores necessitatibus quos blanditiis ex iusto doloribus vitae culpa, velit dignissimos quidem
+        enim amet! Placeat, iusto possimus? Nulla ullam unde inventore reiciendis magnam accusamus amet quidem cumque
+        voluptatem, ab tempore ratione temporibus exercitationem fugiat minus cupiditate nobis, enim alias blanditiis
+        dicta dolores similique molestiae labore ipsa! Earum, ipsa. Fugiat, adipisci?</p>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById('loader2').style.display = 'none'
+        document.getElementById('main').style.display = 'block'
+      }, 3000);
+
+    </script>
+
+
+
+
+</body>
+
+</html>

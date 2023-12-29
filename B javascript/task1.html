@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        .box1 {
+            height: 400px;
+            width: 300px;
+            margin: auto;
+            background-color: rgb(7, 226, 153);
+        }
+
+        .box {
+            margin: auto;
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 40px;
+        }
+
+        input {
+            margin: auto;
+            height: 20px;
+        }
+
+        .box2 {
+            margin: auto;
+            width: 90%;
+            height: auto;
+            border: 1px solid black;
+            margin-top: 10px;
+            background-color: rgb(195, 153, 234);
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        <div class="box">
+            <input type="text" id="input">
+            <button onclick="additeam()">add</button>
+        </div>
+        <div class="box2" id="data">
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        // loop method 
+        let item = []
+        function additeam() {
+            let adddata = document.getElementById('input').value
+            item.push(adddata)
+            str = ''
+            for (let i = 0; i < item.length; i++) {
+                str += '<p>' + item[i] + '</p>'
+
+            }
+            console.log(str);
+            document.getElementById('data').innerHTML = str
+            document.getElementById('data').innerHTML = str.toUpperCase()
+            document.getElementById('input').value = ''
+
+        }
+
+
+
+
+        // append method use   
+
+
+        // function additeam() {
+        //     let adddata = document.getElementById('input').value
+        //     let five = document.createElement('h5')
+        //     let upper = adddata.toUpperCase()
+
+        //     five.innerHTML = upper
+
+        //     document.getElementById('data').append(five)
+        //     document.getElementById('input').value = ''
+        // }
+    </script>
+</body>
+
+</html>
