@@ -22,6 +22,9 @@
 
 
 
+        document.write('<br>')
+        document.write('<br>')
+
         ex: 2
 
         // pattern 2 
@@ -34,6 +37,11 @@
             }
             document.write('<br/    >')
         }
+
+
+        document.write('<br>')
+        document.write('<br>')
+
 
         ex: 3
 
@@ -49,6 +57,9 @@
 
         }
 
+        document.write('<br>')
+        document.write('<br>')
+
         ex: 4
 
         // pattern 4
@@ -63,6 +74,9 @@
             document.write("<br/>")
         }
 
+        document.write('<br>')
+        document.write('<br>')
+
 
         ex: 5
         // pattern 5 
@@ -75,8 +89,72 @@
             }
 
             console.log(string);
-
         }
+
+        // 
+
+
+        ex: 6
+
+        // pattern 6
+        // ****
+        // ***
+        // **
+        // *
+
+        for (let i = 1; i <= 4; i++) {
+            for (let j = 0; j < 5 - i; j++) {
+                document.write('&')
+            }
+            document.write('<br>')
+        }
+
+
+        document.write('<br>')
+        document.write('<br>')
+
+        ex: 7
+
+        // 0123
+        // 456
+        // 78
+        // 9
+
+        let num = 0;
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5 - i; j++) {
+                document.write(num)
+            }
+            document.write('<br>')
+        }
+
+        document.write('<br>')
+        document.write('<br>')
+
+        ex: 8
+
+        //      1
+        //     12
+        //    123
+        //   1234
+        //  12345
+
+
+        // '&nbsp '  for piramida ''ma lakheli antite mate piramide bnse tema antite p6i sapce chodvni 6e
+
+
+        n = '&nbsp '
+        for (let i = 1; i <= 5; i++) {
+
+            for (k = 5; k > i; k--) {
+                document.write(n)
+            }
+            for (let j = 1; j <= i; j++) {
+                document.write(j)
+            }
+            document.write('<br>')
+        }
+
 
 
 
