@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // polymorphism means the same function with diffrent signature is called many times (function same hoi pn call ek karta vadhre var kari sakiye )
+
+        class A {
+            add() {
+                console.log('this is first method');
+            }
+        }
+        class B extends A {
+            add() {
+                super.add()
+                console.log('this is secound method');
+            }
+        }
+        const obj = new B()
+        const objA = new A()
+        obj.add()
+        objA.add()
+
+
+    </script>
+</body>
+
+</html>

@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // class -class is  blueprint of object
-            //capital , small
-            // no number
-            // special symbol no
-            // underscore support
-            // $ support
+        //capital , small
+        // no number
+        // special symbol no
+        // underscore support
+        // $ support
 
-            // class ni ander 3 thyp =>
-            // 1) function
-            // 2) constructor
-            // 3) variable
+        // class ni ander 3 thyp =>
+        // 1) function
+        // 2) constructor
+        // 3) variable
 
-            // ek calss na maultipal objects bani sake 
+        // ek calss na maultipal objects bani sake 
 
 
 
-        class Sum {
-            constructor(a, b) {
-                this.first = a
-                this.second = b
+        // class Sum {
+        //     constructor(a, b) {
+        //         this.first = a
+        //         this.second = b
+        //     }
+
+        //     add(a, b) {
+        //         console.log(this.first + this.second)
+        //         console.log(a + b)
+        //     }
+        // }
+
+        // const s = new Sum(2, 3)
+        // s.add(2, 2)
+        // var m = new Sum(3, 4)
+        // m.add(2, 2)
+
+
+        // exampale 1 
+
+
+        class oddEven {
+            constructor(a) {
+                this.num = a
             }
-
-            add(a, b) {
-                console.log(this.first + this.second)
-                console.log(a + b)
+            check() {
+                if (this.num % 2 == 0) {
+                    console.log('this is even number');
+                } else {
+                    console.log('this is odd number');
+                }
             }
         }
+        var m = prompt('add number :')
+        var odd = new oddEven(Number(m))
+        odd.check()
 
-        const s = new Sum(2, 3)
-        s.add(2, 2)
-        var m = new Sum(3, 4)
-        m.add(2, 2)
-       
     </script>
 </body>
+
 </html>

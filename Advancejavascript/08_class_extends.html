@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // inheritance - use one class inside onther 
+        class sum {
+            constructor(a, b) {
+                this.first = a
+                this.secound = b
+            }
+            odd() {
+                console.log(this.first + this.secound)
+            }
+        }
+        let obj = new sum(10, 30)
+
+        class multi extends sum {
+            constructor(a, b, c, d) {
+                this.first = c
+                this.secound = d
+            }
+            odd() {
+                console.log(this.first + this.secound)
+            }
+        }
+        const objec = new sum(12, 40)
+        objec.odd()
+
+
+    </script>
+</body>
+
+</html>
