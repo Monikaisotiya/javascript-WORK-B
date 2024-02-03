@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search table</title>
+</head>
+
+<body>
+    <input type="search" id="search" onkeyup="findData(event)" />
+    <table border="1" rules="all" id="table">
+        <tr id="header">
+            <th>Name</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td>mona</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>hima</td>
+            <td>59</td>
+        </tr>
+        <tr>
+            <td>monika</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>maher</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>tinu</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>tejal</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>tilak</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>hitansh</td>
+            <td>50</td>
+        </tr>
+
+    </table>
+    <script>
+        function findData(e) {
+            let search = e.target.value
+            let table = document.getElementById('table')
+            let tr = table.getElementsByTagName('tr')
+            for (let i = 1; i < tr.length; i++) {
+                //   console.log(tr[i])
+                let td = tr[i].getElementsByTagName('td')[0]
+
+                let text = td.innerHTML
+                if (text.toLowerCase().indexOf(search) > -1) {
+                    tr[i].style.display = ''
+                } else {
+                    tr[i].style.display = 'none'
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
