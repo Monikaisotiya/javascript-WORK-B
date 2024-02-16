@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            height: 400px;
+            width: 700px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #b {
+            height: 250px;
+            width: 500px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #c {
+            height: 125px;
+            width: 250px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="a">
+        <span>a</span>
+        <div id="b">
+            <span>b</span>
+            <div id="c">
+                <span>c</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="a">
+        <span>1</span>
+        <div class="b">
+            <span>2</span>
+            <div class="c">
+                <span>3</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            //  ancestors
+            $('#c').parent().css({ border: '2px solid red' })
+            $('#c').parents().css({ border: '2px solid green' })
+            $('#c').parentsUntil().css({ border: '2px solid pink' })
+
+            //  //Descendants
+            $('#a').children().css({ border: '2px solid green' })
+            $('#a').find('div').css({ border: '2px solid green' })
+
+            // 
+            // 
+            $('.b').siblings().css({ border: ' 2px solid blue' })
+            $('.b').next().css({ border: '2px solid red' })
+            $('.b').prev().css({ border: ' 2px solid pink' })
+            $('.b').nextAll().css({ border: '2px solid red' })
+        })
+    </script>
+
+
+</body>
+
+</html>

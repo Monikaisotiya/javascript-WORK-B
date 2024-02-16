@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, ex?</span></p>
+    <button id="Remove">Remove p</button>
+    <button id="Empty">Empty p</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('#Remove').click(() => {
+                $('p').remove()
+            })
+
+            $('#Empty').click(() => {
+                $('p').empty()
+            })
+        })
+
+
+    </script>
+
+</body>
+
+</html>

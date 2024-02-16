@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+
+<body>
+
+
+
+    <div style="border: 2px solid rgb(106, 171, 9);">
+        <p>this is p tag</p>
+        <p>another is p tag element</p>
+    </div>
+    <br><br>
+    <div style="border: 2px solid rgb(106, 171, 9);">
+        <p>this is secound p tag</p>
+        <p>2nd is p tag </p>
+    </div>
+    <br><br>
+    <div class="intro" style="border: 2px solid rgb(87, 138, 12);">
+        <p>3rd is a p tag element</p>
+        <p>more then 3rd p tag</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('div').last().css('background-color', 'yellow')
+            $('div').first().css('background-color', 'pink')
+            //  // start from 0 index
+            $('div').eq(2).css('background-color', 'yellow')
+            // all calss of intro
+            $('div').filter('.intro').css('background-color', 'red')
+            // not allowed selected class
+            $('div').not('.intro').css('background-color', 'red')
+        })
+
+
+
+    </script>
+</body>
+
+</html>

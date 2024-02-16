@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoom</title>
+</head>
+
+<body>
+    <img id="img" src="moon.2.webp" alt=""
+        data-zoom-image="https://www.pexels.com/photo/back-view-of-a-woman-reading-a-book-11278221/" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./ez-plus.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('#img').ezPlus()
+        })
+    </script>
+</body>
+
+</html>

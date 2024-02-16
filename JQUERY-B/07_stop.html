@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 100%;
+            background-color: rgb(135, 93, 93);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="down">Slide Down</button>
+    <button id="up">Slide Up</button>
+    <button id="toggle">Slide Toggle</button>
+    <button id="stop">Stop Slide</button>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi
+        sunt voluptas in cum quo. Adipisci vitae incidunt omnis, laudantium dolore
+        aspernatur, dignissimos blanditiis necessitatibus velit reprehenderit,
+        quidem mollitia sint?
+    </div>
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        //  slide down
+        $(document).ready(() => {
+            $('#down').click(() => {
+                $('.box').slideDown(3000).css('font-size', '35px')
+            })
+
+            // slide up
+            $('#up').click(() => {
+                $('.box').slideUp(3000).css('font-size', '35px')
+            })
+            // 
+            // slide toggal
+            $('#toggle').click(() => {
+                $('.box').slideToggle(3000).css('font-size', '20px')
+            })
+
+            // slide to
+            $('#stop').click(() => {
+                $('.box').stop(3000).css('font-size', '30px')
+            })
+        })
+
+    </script>
+</body>
+
+</html>

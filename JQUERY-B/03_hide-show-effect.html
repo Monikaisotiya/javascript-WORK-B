@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide-show</title>
+    <style>
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <button id="show">show tag</button>
+    <button id="hide">hide tag</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam, ab magnam hic odio, in eius reiciendis
+        nesciunt placeat aliquam libero nulla suscipit quis. Est a libero placeat, molestias fugit, ea quam, aspernatur
+        beatae consequuntur earum culpa sit dolor? Officiis, animi eligendi vitae asperiores dolorem a ea dolore.
+        Corrupti, in?</p>
+    <script>
+
+        $(document).ready(() => {
+            $('#show').click(() => {
+                $('p')
+                    .show(5000)
+                    .css('background-color', 'red')
+                    .css('font-size', '40px')
+            })
+            $('#hide').click(() => {
+                $('p').hide(3000)
+            })
+        })
+
+    </script>
+</body>
+
+</html>

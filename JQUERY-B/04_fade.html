@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+    <style>
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="in">fade in</button>
+    <button id="out">fade out</button>
+
+    <button id="toggal">toggal</button>
+
+    <button id="to">fade To</button>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus hic architecto, sapiente consequatur labore
+        sequi ducimus aliquid saepe, impedit quis non earum fugiat. Rerum at ipsum nostrum harum ad ab laudantium!
+        Impedit quis vitae atque.</p>
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        // fade in 
+        $(document).ready(() => {
+            $('#in').click(() => {
+                $('p').fadeIn(3000)
+                $('p').css('color', 'red')
+            })
+
+            // fade out 
+            $('#out').click(() => {
+                $('p').fadeOut(1000)
+                $('p').css('color', 'pink')
+            })
+
+            // toggal
+            $('#toggal').click(() => {
+                $('p').fadeToggle(3000)
+                $('p').css('color', 'pink')
+            })
+
+            // to
+            $('#to').click(() => {
+                $('p').fadeTo(2000)
+                $('p').css('color', 'yellow')
+            })
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="up">slide up</button>
+    <button id="down">slide down</button>
+    <button id="toggal">slide toggal</button>
+
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem asperiores repellendus obcaecati
+        numquam magni. Tempore cupiditate quae aliquid suscipit ipsam, neque expedita quod illo eaque. Reiciendis unde
+        pariatur dolorum deserunt deleniti recusandae. Quae voluptatum ab minima porro! Amet temporibus doloribus iure a
+        deserunt rem dolorum molestias quas! Dolore labore qui ipsum perferendis nisi ab unde reprehenderit ad
+        voluptate.</div>
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        //    slide down
+        $(document).ready(() => {
+            $('#down').click(() => {
+                $('.box').slideDown(3000).css('font-size', '34px')
+            })
+
+            // slide up
+            $('#up').click(() => {
+                $('.box').slideUp(3000).css('font-size', '30px')
+            })
+
+            // slide toggal
+            $('#toggal').click(() => {
+                $('.box').slideToggle(3000).css('color', 'green')
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

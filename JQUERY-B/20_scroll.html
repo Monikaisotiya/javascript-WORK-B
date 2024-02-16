@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="border: 2px solid palegreen; height: 100px; width: 250px; overflow: auto;">
+        Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Reiciendis
+        ratione eaque illo ut
+        dolores, ab, excepturi sapiente quod, provident debitis minima quo in numquam veniam animi ipsam. Deleniti
+        libero fuga omnis magni officiis. Voluptatum placeat obcaecati ipsam rem consequuntur enim. Tenetur obcaecati
+        tempore unde laboriosam praesentium debitis ullam officiis amet!
+    </div>
+
+
+
+    <br><br>
+
+    <button>Return the vertical position of the scrollbar</button>
+    <br><br>
+
+    <p>Move the scrollbar down and click the button again.</p>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(() => {
+        $('button').click(() => {
+            alert($('div').scrollTop())
+        })
+
+    })
+</script>
+
+
+</html>

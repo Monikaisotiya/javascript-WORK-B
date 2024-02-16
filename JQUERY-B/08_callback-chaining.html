@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback-chaining</title>
+</head>
+
+<body>
+    <button id="slideDown">slideDown</button>
+    <button id="slideUp">slideUp</button>
+    <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi velit ab ipsum dolorem voluptate
+        alias sequi soluta temporibus sit adipisci, impedit consequuntur facere enim, laborum perspiciatis dolor natus
+        nesciunt numquam est aliquam voluptatibus rerum et. Esse dolorum vel ab inventore.</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(() => {
+            // chaining method
+            $('#slideDown').click(() => {
+                $('.box').slideDown(3000).css('font-size', '34px')
+            })
+            // callback
+            $('#slideUp').click(() => {
+                $('.box').slideDown(3000, () => {
+                    $('.box').css('color', 'red')
+                })
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body>
+
+    mouse event
+    <br><br>
+
+    <button id="click">click me</button><br><br>
+    <button id="bdclick">dbclick</button><br><br>
+    <button id="mouseover">mouseover</button><br><br>
+    <button id="mouseleave">mouseleave</button><br><br>
+    <button id="mouseup">mouseup</button><br><br>
+    <button id="mousedown">mousedown</button><br><br>
+
+    // keyboard event
+
+    <h1 id="data"></h1>
+
+    <input type="text" />
+    <input type="radio" name="gender" id="" value="male">
+    <input type="radio" name="gender" id="" value="female">
+
+    <br><br>
+    focus event
+    <br><br>
+
+    <input type="text" id="focus">
+
+    <br><br>
+    blur
+    <br><br>
+
+    <input type="text" id="blur">
+    <br><br><br>
+    onclick scroll
+    <br><br><br>
+    <button id="onscroll">onclick scroll</button>
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(() => {
+            // click event 
+            $('#click').click((event) => {
+                event.target.style.color = 'red'
+            })
+
+            // dbclick 
+            $('#bdclick').dblclick((event) => {
+                event.target.style.color = 'blue'
+            })
+
+            // mouseover
+            $('#mouseover').mouseover((event) => {
+                event.target.style.backgroundColor = 'pink'
+            })
+
+            //  mouseleave
+            $('#mouseleave').mouseleave((event) => {
+                event.target.style.backgroundColor = 'green'
+            })
+
+            // mouseup
+            $('#mouseup').mouseup((event) => {
+                event.target.style.fontSize = '20px'
+                event.target.style.color = 'balck'
+                event.target.style.backgroundColor = 'yellow'
+
+            })
+
+            // mouse down
+            $('#mousedown').mousedown((event) => {
+                event.target.style.color = 'red'
+            })
+
+            // keyboard event
+
+            // keypress
+
+            $('input').keypress((event) => {
+                $('#data').text(event.target.value)
+            })
+
+            // keydown
+            $('input').keydown((event) => {
+                $('#data').text(e.target.value)
+            })
+
+            //keyup
+            $('input').keyup((event) => {
+                $('#data').text(e.target.value)
+            })
+
+            // form event
+            $('input[type=radio][name=gender]').change((e) => {
+                $('#data').text(e.target.value)
+            })
+
+            // focus
+
+            $('#focus').focus((e) => {
+                e.target.style.backgroundColor = 'yellow'
+            })
+
+            // blur
+            $('#blur').blur((e) => {
+                e.target.style.backgroundColor = 'red'
+            })
+
+            // scroll
+
+            $('input').scroll((e) => {
+            })
+
+            // onclick scroll
+
+            $('#onscroll').click(() => {
+                window.scroll({
+                    left: 100,
+                    top: 50,
+                    behavior: 'smooth',
+                })
+            })
+            // resize(page ni size resize krva chack karva mate a function use ty )
+
+
+            $(window).resize(function () {
+                let width = $(window).width()
+                console.log(width)
+                if (width < 500) {
+                    document.body.style.backgroundColor = 'red'
+                }
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>
