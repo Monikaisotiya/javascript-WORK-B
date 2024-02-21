@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    width: 100%;
+    background-color: red;
+}
+
+.header .left {
+    width: 49%;
+}
+
+.header .left h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 12px;
+    color: beige;
+}
+
+.header .left h1 i {
+    font-size: 30px;
+    color: yellow;
+}
+
+.header .right {
+    margin: 12px 0px 0px 0px;
+    width: 49%;
+}
+
+.header .right ul {
+    list-style: none;
+    font-size: medium;
+    text-align: end;
+    padding: 3px;
+}
+
+.header .right li {
+    display: inline;
+}
+
+.header .right li a {
+    text-decoration: none;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-weight: bold;
+}
+
+.blog {
+    position: relative;
+}
+
+.blog .blog1 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: red;
+    display: none;
+}
+
+.blog .blog1 li {
+    display: block;
+    text-align: start;
+}
+
+.blog.blog1 a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-weight: bold;
+}
+
+.blog:hover .blog1 {
+    display: block;
+}
