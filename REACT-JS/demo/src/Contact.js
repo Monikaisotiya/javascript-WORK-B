@@ -1,12 +1,14 @@
 import React from 'react'
 
-function Contact() {
-    return (
-        <div>
-            <h1>my name is monika isotiya</h1>
-            <h2>i from surat gujrat</h2>
-        </div>
-    )
+const Contact = (props) => {
+    return <>
+        <h1>{props.myname}</h1>
+        <h2>{props.email}</h2>
+        <h3>{props.address }</h3>
+
+
+
+    </>
 }
 
 export default Contact

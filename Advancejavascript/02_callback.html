@@ -13,17 +13,19 @@
         // function ni ander function 
         // mostly use asyncawait .. 
 
+
+
         // example 1 
 
-        // function sum(a, b) {
-        //     return a + b
-        // }
-        // function multi(a, b) {
-        //     console.log(a * b);
-        // }
+        function sum(a, b) {
+            return a + b
+        }
+        function multi(a, b) {
+            console.log(a * b);
+        }
 
-        // let add = sum(3, 5)
-        // multi(add, 10)
+        let add = sum(3, 5)
+        multi(add, 10)
 
         // example 2
 
@@ -77,21 +79,21 @@
 
         // example 5 
 
-        function sum(a, b, callback) {
-            return callback(a + b, 1)
-        }
-        function multi(a, b) {
-            return a * b
-        }
-        function div(a, b, callback) {
-            return callback(a / b, 1)
-        }
-        function mod(a, b) {
-            return a % b
-        }
-        let c = sum(3, 2, multi)
-        let d = div(2, c, mod)
-        console.log(d);
+        // function sum(a, b, callback) {
+        //     return callback(a + b, 1)
+        // }
+        // function multi(a, b) {
+        //     return a * b
+        // }
+        // function div(a, b, callback) {
+        //     return callback(a / b, 1)
+        // }
+        // function mod(a, b) {
+        //     return a % b
+        // }
+        // let c = sum(3, 2, multi)
+        // let d = div(2, c, mod)
+        // console.log(d);
 
 
 
