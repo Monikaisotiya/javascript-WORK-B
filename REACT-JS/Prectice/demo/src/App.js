@@ -11,24 +11,26 @@ import InDic from './InDic';
 import Useref from './Useref';
 import Todolist from './Todolist';
 import Event from './Event';
+// import Cal from './CALCULATER/Cal';
 
 
-// const name = 'My_web_name'
-// const email = "monikaisotiya123@gmail.com"
-// const addr = "b-1/401 shlok residancy utran,surat"
+const name = 'My_web_name'
+const email = "monikaisotiya123@gmail.com"
+const addr = "b-1/401 shlok residancy utran,surat"
 
 function App() {
   return (
     <>
-      
+       <Contact myname={name} email={email} address={addr} />
+      {/* <Cal/> */}
       {/* <Todolist /> */}
       {/* <Head />
       <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugiat eveniet distinctio sunt deleniti dolorem temporibus animi. Aut, similique molestiae harum voluptatem quas eaque sunt quo omnis veritatis eveniet laboriosam.</h1> */}
       {/* <Header /> */}
       {/* <InDic />  */}
       {/* <Useref /> */}
-      {/* <Contact myname={name} email={email} address={addr} /> */}
-      <Event/>
+      <Contact myname={name} email={email} address={addr} />
+      {/* <Event/> */}
     
      
 
