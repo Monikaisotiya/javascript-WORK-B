@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import ChildA from './component/ChildA';
-import Main from './Darkmode/Main';
+import APIcall from './Hook3/APIcall';
+// import ChildA from './component/ChildA';
+// import Main from './Darkmode/Main';
+// import Effect from './Hook3/Effect';
 
 
 function App() {
@@ -9,9 +11,9 @@ function App() {
     <div>
 
   
-    
-
-<Main/>
+    <APIcall/>
+    {/* < Effect/> */}
+     {/* <Main/> */}
       {/* <ChildA/> */}
     
     
