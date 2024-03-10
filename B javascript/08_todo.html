@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color:green;
+            height: 300px;
+            width: 300px;
+        }
+        .box{
+            text-align: center;
+            padding: 20px;
+        }
+        .box2{
+            margin: auto;
+            width: 100%;
+            height: auto;
+            background-color: cadetblue;
+            color: rgb(196, 228, 228);
+            font-size: 10px;
+
+        }
+        .input{
+       height: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box">
+            <input type="text" id="input">
+            <button>Add</button>
+        </div>
+        <div class="box2" id="data">
+
+        </div>
+    </div>
+
+    <script>
+
+let item=[]
+function addItem(){
+    inpt= document.getElementById('input').value
+    item.push(inpt)
+    console.log(inpt);
+     document.getElementById('input').value = ''
+    displayElement(item)
+}
+function displayElement(){
+    
+}
+
+    </script>
+</body>
+</html>

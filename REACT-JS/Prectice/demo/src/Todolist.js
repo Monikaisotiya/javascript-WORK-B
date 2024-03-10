@@ -11,7 +11,7 @@ function Todo() {
 
     const deleteData = (index) => {
         let newdata = todo.filter((result, id) => {
-            return id != index
+            return id != index 
         })
 
         setTodo(newdata)

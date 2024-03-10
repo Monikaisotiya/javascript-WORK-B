@@ -9,8 +9,9 @@
         .box1 {
             height: 300px;
             width: 250px;
-            background-color: aqua;
+            background-color: rgb(83, 101, 101);
             margin: auto;
+            border-radius: 10px;
         }
 
         .box {
@@ -54,7 +55,7 @@
             document.getElementById('input').value = ''
             displayElement(item)
         }
-        function displayElement(data) {
+            function displayElement(data) {
             document.getElementById('data').innerHTML = ''
             data.forEach((value, index) => {
                 let itdata = document.createElement('h1')
