@@ -21,7 +21,7 @@ const addr = "b-1/401 shlok residancy utran,surat"
 function App() {
   return (
     <>
-       {/* <Contact myname={name} email={email} address={addr} /> */}
+       {/* <Contact myname={name} email={email} address={addr=} /> */}
       {/* <Cal/> */}
       <Todolist />
       {/* <Head />
