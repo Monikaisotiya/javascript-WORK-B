@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtotal Calculator</title>
+    <style>
+        /* Optional: Add some basic styling */
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Subtotal Calculator</h1>
+    <form id="calculatorForm">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1">
+        <br>
+        <label for="pricePerUnit">Price per Unit:</label>
+        <input type="number" id="pricePerUnit" value="0">
+        <br>
+        <button type="button" onclick="calculateSubtotal()">Calculate Subtotal</button>
+    </form>
+    <p id="subtotal">Subtotal: $0</p>
+
+    <script>
+        function calculateSubtotal() {
+            var quantity = parseFloat(document.getElementById('quantity').value);
+            var pricePerUnit = parseFloat(document.getElementById('pricePerUnit').value);
+            var subtotal = quantity * pricePerUnit;
+            document.getElementById('subtotal').textContent = 'Subtotal: $' + subtotal.toFixed(2);
+        }
+
+        // Add event listeners to recalculate subtotal when inputs change
+        document.getElementById('quantity').addEventListener('input', calculateSubtotal);
+        document.getElementById('pricePerUnit').addEventListener('input', calculateSubtotal);
+    </script>
+</body>
+
+</html>
+
+
