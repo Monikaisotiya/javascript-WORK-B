@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Hook1 from './Hooks/Hook1';
+import Hook2 from './Hooks/Hook2';
+import ChildA from './hook3/ChildA';
+import Frist from './hook4/Frist';
+import Lyfcycle from './LifeCycle/Lyfcycle';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Hook1/>
+      <Hook2/>
+      <ChildA /> */}
+      {/* <Frist/> */}
+      <Lyfcycle/>
+       
+      
+    </>
   );
 }
 
