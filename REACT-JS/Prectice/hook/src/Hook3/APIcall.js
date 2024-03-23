@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from 'react'
 
 const APIcall = () => {
-    const [product, setproduct] = useState([])
+    const [product, setproduct] = useEffect([])
     useEffect(() => {
-       fetch('https://fakestoreapi.com/products').then((result) => {
+        fetch('https://fakestoreapi.com/products').then((result) => {
             return result.json()
         }).then((res) => {
             console.log(res);

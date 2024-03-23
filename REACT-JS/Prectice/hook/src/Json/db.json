@@ -1,24 +1,32 @@
 {
-    "std":[
-        {
-            "id":1,
-            "name":"hemali",
-            "marks":90
-        },
-        {
-            "id":2,
-            "name":"mira",
-            "marks":60
-        },
-        {
-            "id":3,
-            "name":"painkal",
-            "marks":70
-        },
-        {
-            "id":4,
-            "name":"mona",
-            "marks":80
-        }
-    ]
+  "std": [
+    {
+      "id": "aaa7",
+      "name": "moni"
+    },
+    {
+      "id": "2998",
+      "name": "dcd"
+    },
+    {
+      "id": "54c0",
+      "name": "mjj"
+    },
+    {
+      "id": "36c1",
+      "name": "ssx"
+    },
+    {
+      "id": "a48d",
+      "name": "aza"
+    },
+    {
+      "id": "d437",
+      "name": "aza"
+    },
+    {
+      "id": "d51b",
+      "name": "aa"
+    }
+  ]
 }

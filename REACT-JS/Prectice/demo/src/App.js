@@ -23,11 +23,11 @@ function App() {
     <>
        {/* <Contact myname={name} email={email} address={addr=} /> */}
       {/* <Cal/> */}
-      <Todolist />
+      {/* <Todolist /> */}
       {/* <Head />
       <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugiat eveniet distinctio sunt deleniti dolorem temporibus animi. Aut, similique molestiae harum voluptatem quas eaque sunt quo omnis veritatis eveniet laboriosam.</h1> */}
       {/* <Header /> */}
-      {/* <InDic />  */}
+      <InDic /> 
       {/* <Useref /> */}
       {/* <Contact myname={name} email={email} address={addr} /> */}
       {/* <Event/> */}
