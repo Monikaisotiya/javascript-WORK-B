@@ -12,15 +12,17 @@ import Demo from './Lifecycle/Demo';
 import Lifecylce from './Lifecycle/Lifecylce';
 import ToDolist from './Lifecycle/ToDolist';
 import Crud from './CRUD/Crud';
+import PropsType from './CRUD/PropsType';
 
 
-
-
+const website = 'WebName'
+const std = { name: 'moni', age: '25' }
 
 function App() {
     return (
         <>
-            {/* <Crud/> */}
+            {/* <Crud /> */}
+            {/* <PropsType site={website} list={std } /> */}
             {/* <ToDolist/> */}
             {/* <Lifecylce/> */}
             {/* <Demo/> */}
