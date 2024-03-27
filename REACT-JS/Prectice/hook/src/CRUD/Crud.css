@@ -1,0 +1,23 @@
+body{
+    background-color: #0b0a0a;
+    
+    /* height: 500px;
+    width: 500px; */
+}
+#Form{
+    border: 2px solid black;
+    background-color: greenyellow;
+    height: 350px;
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 90px;
+    
+}
+#inpt{
+    margin-top: 45px;
+   
+}
+table,th,tr,td{
+    border: 1px solid whitesmoke;
+    color: white;
+}

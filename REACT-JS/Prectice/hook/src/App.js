@@ -11,6 +11,7 @@ import Render from './Condistional_RENDER/Render';
 import Demo from './Lifecycle/Demo';
 import Lifecylce from './Lifecycle/Lifecylce';
 import ToDolist from './Lifecycle/ToDolist';
+import Crud from './CRUD/Crud';
 
 
 
@@ -19,11 +20,12 @@ import ToDolist from './Lifecycle/ToDolist';
 function App() {
     return (
         <>
+            {/* <Crud/> */}
             {/* <ToDolist/> */}
             {/* <Lifecylce/> */}
             {/* <Demo/> */}
             {/* <Render/> */}
-            <GETP_API/>
+            {/* <GETP_API/> */}
            {/* <GET_API/> */}
             {/* <Data/> */}
             {/* <Main /> */}
