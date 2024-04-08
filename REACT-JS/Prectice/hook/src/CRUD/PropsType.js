@@ -1,7 +1,7 @@
 import React from 'react'
 import PropType from 'prop-types'
 
-const PropsType = ({list}) => {
+const PropsType = ({ list }) => {
   return (
       <>
           {/* <h1>{site.name }</h1> */}
@@ -11,14 +11,14 @@ const PropsType = ({list}) => {
   )
 }
 // PropsType.PropType = {
-//     site: PropsType.number.isRequired
+//     site: PropType.number.isRequired
 // }
 
-PropsType.PropsType = {
-    list: PropType.shape({
-  site: PropsType.number,
-    age: PropsType.string
-    })
-  
+PropsType.PropType = {
+  list: PropType.shape({
+    name: PropType.number.isRequired,
+    age: PropType.string.isRequired
+  })
 }
+
 export default PropsType

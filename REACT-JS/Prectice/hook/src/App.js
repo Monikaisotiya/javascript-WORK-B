@@ -13,6 +13,10 @@ import Lifecylce from './Lifecycle/Lifecylce';
 import ToDolist from './Lifecycle/ToDolist';
 import Crud from './CRUD/Crud';
 import PropsType from './CRUD/PropsType';
+import Forword from './ForwardRef-hook/Forword';
+import Loder from './LAZY/Loder';
+import A from './Hook-callback/A';
+import ToDo from './Function-ToDo/ToDo';
 
 
 const website = 'WebName'
@@ -20,22 +24,26 @@ const std = { name: 'moni', age: '25' }
 
 function App() {
     return (
-        <>
-            {/* <Crud /> */}
-            {/* <PropsType site={website} list={std } /> */}
-            {/* <ToDolist/> */}
-            {/* <Lifecylce/> */}
-            {/* <Demo/> */}
-            {/* <Render/> */}
-            {/* <GETP_API/> */}
-           {/* <GET_API/> */}
-            {/* <Data/> */}
-            {/* <Main /> */}
-            {/* <ChildA /> */}
-            {/* <APIcall /> */}
-            {/* <Json_api/> */}
-        </>
-    )
+      <>
+        <A />
+        {/* <ToDo/> */}
+        {/* <Crud /> */}
+        {/* <PropsType site={website} list={std} /> */}
+        {/* <ToDolist/> */}
+        {/* <Lifecylce/> */}
+        {/* <Demo/> */}
+        {/* <Render/> */}
+        {/* <GETP_API/> */}
+        {/* <GET_API/> */}
+        {/* <Data/> */}
+        {/* <Main /> */}
+        {/* <ChildA /> */}
+        {/* <APIcall /> */}
+        {/* <Json_api/> */}
+        {/* <Forword/> */}
+        {/* <Loder/> */}
+      </>
+    );
 }
 
 
