@@ -13,31 +13,38 @@ const GET_API = () => {
     },[])
     
     const getdata = () => {
-      axios.get('http://localhost:8001/std').then((result) => {
+      axios.get("https://jsonplaceholder.typicode.com/users").then((result) => {
         console.log(result.data);
-        setData(result.data)
-        })
+        setData(result.data);
+      });
   }
   
   const addData = () => {
     if (index == null) {
-      axios.post('http://localhost:8001/std', { name: inpt.current.value }).then(() => {
-      getdata()
-      inpt.current.value = ''
-      
-    })
+      axios
+        .post("https://jsonplaceholder.typicode.com/users", {
+          name: inpt.current.value,
+        })
+        .then(() => {
+          getdata();
+          inpt.current.value = "";
+        });
     } else {
-      axios.patch(`http://localhost:8001/std/${index}`, { name: inpt.current.value }).then((res) => {
-        getdata()
-        inpt.current.value = null
-        setindex(null)
-      })
+      axios
+        .patch(`https://jsonplaceholder.typicode.com/users/${index}`, {
+          name: inpt.current.value,
+        })
+        .then((res) => {  
+          getdata();
+          inpt.current.value = null;
+          setindex(null);
+        });
    }
   }
   const deletedata = (i) => {
-    axios.delete(`http://localhost:8001/std/${i}`).then(() => {
-      getdata()
-    })
+    axios.delete(`https://jsonplaceholder.typicode.com/users/${i}`).then(() => {
+      getdata();
+    });
   }
 
   const updatData = (id, name) => {
@@ -63,14 +70,12 @@ const GET_API = () => {
           {Data.map((result, i) => {
               return (
                    <>
-                  <tr>
+                    <tr>
                     <td>{i+1 }</td>
                     <td>{result.name}</td>
-
-
                     <td>
                       <button onClick={() => {
-                      deletedata(result.id)
+                      deletedata(result.i)
                       }}>Delete</button>
 
                       <button onClick={() => {
