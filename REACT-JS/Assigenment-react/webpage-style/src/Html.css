@@ -1,0 +1,289 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* section  */
+.section {
+  width: 100%;
+}
+.section .div1 {
+  font-size: 24px;
+}
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  color: #ebe2d7;
+  z-index: 9999;
+  padding: 10px 10px 10px 32px;
+  justify-content: space-between;
+  /* background-color: hsl(240, 40%, 4%); */
+  background-color: black;
+  background: linear-gradient(to right, black, rgb(46, 46, 42));
+}
+header .div1 {
+  font-style: italic;
+  font-family: ui-rounded;
+}
+header .div2 {
+  display: flex;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  color: #f0eee7;
+  justify-content: space-between;
+  width: 300px;
+}
+.div2 h6:hover {
+  color: #ffc107;
+  cursor: pointer;
+}
+
+header .div3 {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  align-items: center;
+}
+header .div3 button {
+  background-color: #ffc107;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 35px;
+  width: 90px;
+  height: 25px;
+  font-size: small;
+}
+
+/* .section1  */
+
+.section1 .bgimaages1 img {
+  height: auto;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+.bgcontain {
+  position: absolute;
+  top: 320px;
+  color: white;
+  font-size: 24px;
+  margin-top: 60px;
+}
+.section1 .bgcontain h3 {
+  font-style: italic;
+  font-family: ui-rounded;
+  font-weight: 800;
+  padding: 12px;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.section1 .bgcontain p {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-style: italic; */
+  width: 400px;
+  padding: 5px 0px 5px 14px;
+}
+.section1 button {
+  background-color: hsl(45, 100%, 51%);
+  padding: 0px 0px;
+  border: none;
+  border-radius: 35px;
+  width: 90px;
+  height: 25px;
+  font-size: small;
+  margin: 12px;
+}
+/* .section1:hover button {
+  background-color: hsl(44, 55%, 24%);
+  
+} */
+
+/* section2  */
+
+.section2 {
+  background-color: white;
+  color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  padding: 36px 48px;
+}
+
+.section2 img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  transition: all 2s linear;
+}
+.section2:hover img {
+  transform: scale(0.9);
+  border-radius: 300px;
+}
+
+.section2 .b1 {
+  font-style: italic;
+  font-family: serif;
+  background-color: #010106;
+  border-radius: 20px;
+  margin-top: 10px;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.section2 :hover .b1 {
+  color: chartreuse;
+}
+.section2 button {
+  background-color: #ffc107;
+  /* padding: 0px 10px 23px 0px; */
+  border: none;
+  border-radius: 35px;
+  width: 100px;
+  height: 45px;
+  font-size: small;
+  margin: 12px;
+}
+.ordernow:hover {
+  background-color: green;
+  transition: all 2s linear;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* section3 */
+
+.section3 {
+  margin-top: 50px;
+  height: 600px;
+  width: auto;
+  background-color: #222831;
+  display: flex;
+  gap: 20px;
+}
+.section3 .r8 img {
+  height: 500px;
+  width: 500px;
+  margin-top: 50px;
+}
+
+.section3 .r9 {
+  color: whitesmoke;
+  z-index: 9999;
+  color: whitesmoke;
+  /* z-index: 9999; */
+  font-family: cursive;
+  /* padding: 25px 0px; */
+  /* width: 539px; */
+  margin-top: 130px;
+  padding: 20px 30px 0px 20px;
+}
+.section3 button {
+  color: hsl(0, 3%, 6%);
+  background-color: #ffc107;
+  border-radius: 10px;
+  border: none;
+}
+
+/* section4  */
+
+.section4 {
+  margin-top: 50px;
+}
+.section4 .carousel-inner {
+  background-color: #222831;
+  padding: 0px 0px 0px 0px;
+}
+
+/* section5 */
+.section5 .footer1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  background-color: rgb(45, 42, 58);
+  color: white;
+  padding: 26px 40px 13px 20px;
+}
+.section5 .footer1 .first h4 {
+  font-family: "Dancing Script";
+  font-size: 35px;
+  /* gap: 5px 5px; */
+  row-gap: 5px;
+  font-style: italic;
+}
+
+.section5 .footer1 .box a,
+span {
+  font-size: 12px;
+  flex-direction: column;
+  color: aliceblue;
+  gap: 4px 0px;
+}
+.section5 .first {
+  padding: 53px 40px 25px 26px;
+}
+.section5 .secound {
+  padding: 50px 0px 0px 30px;
+  font-family: "Dancing Script";
+  font-size: 12px;
+  font-style: italic;
+  width: 230px;
+}
+.section5 .secound .footer.i a,
+i {
+  color: white;
+}
+.section5 .thard,
+h4 {
+  font-family: "Dancing Script";
+  font-style: italic;
+  font-size: 35px;
+}
+.section5 .thard {
+  font-size: 15px;
+  padding: 53px 20px 0px 12px;
+}
+
+/* section6 */
+
+.section6 {
+  background-color: white;
+  width: auto;
+  /* height: 10px; */
+  color: rgb(209, 23, 23);
+  text-align: center;
+}
+.box i {
+  margin-right: 10px;
+}
+.footer.i,
+a,
+i {
+  margin-right: 5px;
+}
+/* .barsicon {
+  display: none;
+} */
+.responsivemenu {
+  background: black;
+  color: rgb(255, 255, 255);
+  padding: 15px 27px;
+}
+/* .responsivemenu {
+  display: none;
+} */
+.responsivemenu h6 {
+  margin: 0px;
+}
+.div2 h6 {
+  margin: 0px;
+}
+.div1 h3 {
+  margin: 0px;
+}
+.barsicon {
+  cursor: pointer;
+}
