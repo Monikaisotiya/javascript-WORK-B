@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import React from "react";
 import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
@@ -16,17 +16,17 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/adminpenal" exact element={<Admin_p />}></Route>
+          <Route path="/adminpenal" element={<Admin_p />}></Route>
 
           {/* neasted route */}
-          <Route path="/" exact element={<Home />}></Route>
-          <Route path="/shop" exact element={<Shopcart />}></Route>
-          <Route path="/login" exact element={<LoginRegistar />}></Route>
+          <Route path="/"  element={<Home />}></Route>
+          <Route path="/shop"  element={<Shopcart />}></Route>
+          <Route path="/login" element={<LoginRegistar />}></Route>
 
-          <Route path="/header" exact element={<Header />}></Route>
-          <Route path="/shop" exact element={<Shopcart />}></Route>
-          <Route path="/Footer" exact element={<Footer />}></Route>
-          <Route path="/product" exact element={<Productdetails />}></Route>
+          <Route path="/header"  element={<Header />}></Route>
+          <Route path="/shop"  element={<Shopcart />}></Route>
+          <Route path="/Footer"  element={<Footer />}></Route>
+          <Route path="/product"  element={<Productdetails />}></Route>
         </Routes>
       </BrowserRouter>
     </>

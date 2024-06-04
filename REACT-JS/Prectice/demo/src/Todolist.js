@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 
 function Todo() {
     const [todo, setTodo] = useState([])
+    const [ Id , setId] = useState(null)
     const input = useRef(null)
     const AddData = () => {
         setTodo([...todo, input.current.value])
@@ -11,10 +12,16 @@ function Todo() {
 
     const deleteData = (index) => {
         let newdata = todo.filter((result, id) => {
-            return id != index 
+            return id != index
         })
-
         setTodo(newdata)
+    }
+
+    const UpdataData = (res, index) => {
+        input.current.value = res
+        setId(index)
+
+        
     }
 
     return <>
@@ -25,13 +32,17 @@ function Todo() {
             }}>
                 Add
             </button>
-            {todo.map((result, i) => {
+            {todo.map((result, i) =>{
                 return (
                     <>
                         <h1>{result}</h1>
                         <button onClick={() => {
                             deleteData(i)
                         }}>Delete</button>
+
+                        <button onClick={() => {
+                            UpdataData(result,i)
+                        }}>Update</button>
                     </>
                 )
             })}

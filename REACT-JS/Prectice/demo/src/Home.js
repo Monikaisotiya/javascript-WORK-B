@@ -1,14 +1,14 @@
-import React from 'react'
-import Slider from './Slider';
-import Card from './card';
+import React from "react";
+import Slider from "./Slider";
+import Card from "./card";
 
 const Home = () => {
   return (
     <>
       <Slider />
-          <Card />
+      <Card />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
