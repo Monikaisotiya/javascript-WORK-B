@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo</title>
+    <style>
+        ul{
+            list-style: none;
+
+        }
+        li a{
+            text-decoration: none;
+        }
+        a:active{
+            color: palegreen;
+        }
+        a:visited{
+            color: darkgreen;
+        }
+        a:hover{
+            background-color: cyan;
+            font-size: 50px;
+        }
+        /* psudo elemnt; */
+
+        /* p::first-letter{
+            color: crimson;
+        }
+        p::first-line{
+            color: rgb(76, 12, 227);
+        } */
+        P::before{
+            content: url(https://media.tenor.com/nNcRTJtjpcUAAAAM/emoji-smiley.gif);
+            height: 10px;
+            width: 10px;
+        }
+        P::first-line{
+            color:palevioletred ;
+        }
+        P::after{
+            content: url(https://media.tenor.com/0EMTmxT_VD8AAAAM/smileys-smiling.gif);
+            height: 10px;
+            width: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul style="font: 900;">
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">servies</a></li>
+    </ul>
+
+
+
+    <h1> psudo element </h1>
+    <div>
+        <p style="font-size: xx-large;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nihil assumenda harum facere. Quisquam ipsam porro, est ullam, accusamus optio vel nobis amet necessitatibus impedit id repellendus tempore vitae maxime officia? In ullam unde voluptatibus saepe quibusdam eligendi placeat suscipit! Hic omnis laudantium ab id laborum, iure sequi vero, quisquam dolor ex qui aliquid atque et repudiandae incidunt, aperiam veritatis!</p>
+    </div>
+    
+</body>
+</html>

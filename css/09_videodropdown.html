@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video dropdown</title>
+    <style>
+        video{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-size: cover;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            right: 20px;
+            
+        }
+        ul{
+            position: absolute;
+    list-style: none;
+    display: flex;
+    /* border: 5px solid rgb(127, 113, 177); */
+    z-index: 2;
+    top: -17px;
+    left: 455px;
+    margin-right: 0px;
+    margin-left: 200px;
+        }
+        li{
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .monu{
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+           
+        }
+        .blog:hover .monu{
+           
+            display: block;
+            color: chartreuse;
+            width: 100px;
+            padding: 10px 10px;
+            height: 30px;
+
+
+
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop controls >
+       <source src="video.dropdown copy 2.mp4" type="video/mp4" >
+       
+    </video>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">products</a></li>
+        <li class="blog"><a href="">blog</a>
+            <ul class="monu">
+                <li>logout</li>
+                <li>singup</li>
+            </ul>
+         </li>
+        <li><a href="">about</a></li>
+        
+    </ul>
+    
+</body>
+</html>

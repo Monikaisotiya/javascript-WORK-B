@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop down </title>
+    <style>
+        ul {
+            background-color: rgb(237, 250, 237);
+            list-style: none;
+            width: 100%;
+            /* text-align: end; */
+            height: 30px;
+            border: 2px solid palevioletred;
+        }
+
+        li {
+            margin-right: 50px;
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+        }
+         .java{
+            position: relative;
+          }
+         .moni {
+            display: none;
+            position: absolute;
+            top: 15px;
+            left: 40px;
+            border: none;
+        }
+        .java:hover .moni {
+            display: block;
+            color: rgb(190, 18, 18);
+            width: 100px;
+            padding: 10px 15px;
+            border: none;
+            height: 80px;
+        }
+        .entry{
+            position: relative;
+        }
+        .heer{
+            display: none;
+            position: absolute;
+            top: 23px;
+            left: 30px;
+            border: none;
+        }
+        .entry:hover .heer{
+            display: block;
+            color: rgb(14, 14, 219);
+            width: 100px;
+            padding: 10px 10px;
+            height: 70px;
+        }
+        .css{
+            position: relative;
+        }
+        .parth{
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 32px;
+        }
+        .css:hover .parth{
+            display: block;
+            color: red;
+            width: 100px;
+            padding: 10px 10px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> core web designing <br>Assessment Test 2 </h1>
+    <p>create a Navigation bar with dropdown menu and Logo.</p>
+    <p>Make sure to use lowercase for all start and tags and tag must be closed as it starts.</p>
+    <p>execution of the code following result must be displayed.</p>
+    <div>
+
+        <ul>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li class="java"><a href="">JAVASCRIPT</a>
+                <ul class="moni">
+                    <li> <a href="">logout</a></li>
+                    <li><a href="">singup</a> </li>
+                    <li class="entry"><a href="">entry</a> 
+                    <ul class="heer">
+                        <li>c+</li>
+                        <li>c++</li>
+                        <li class="css">css
+                            <ul class="parth">
+                                <li>parth</li>
+
+                            </ul>
+                        </li>
+                      </ul>
+                   </li>
+                </ul>
+            </li>
+            <li><a href="">SQL</a></li>
+            <li><a href="">PYTHON</a></li>
+            <li><a href="">JAVA</a></li>
+            <li><a href="">PHP</a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,822 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    /* color: white; */
+}
+
+.header {
+    display: flex;
+    flex-direction: unset;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+}
+
+.moni {
+    
+    top: 0%;
+    left: 0%;
+    background-color: transparent;
+    z-index: 2;
+    width: 100%;
+}
+
+.header .left {
+    width: 40%;
+    margin-left: 60px;
+    display: flex;
+    gap: 15px;
+
+
+}
+
+.header .left h1 {
+    font-weight: 500;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: white;
+    /* border: 1px solid red; */
+
+
+}
+
+.header .left img {
+
+    margin-top: 5px;
+    height: 60px;
+    width: auto;
+}
+
+.header .right {
+    flex-direction: unset;
+    /* display: flex; */
+    width: 59%;
+    /* border: 1px solid red; */
+}
+
+.header .right ul {
+    margin: 5px 50px 50px 0px;
+    display: flex;
+    flex-direction: unset;
+    width: 100%;
+
+}
+
+.header .right ul li {
+    display: inline;
+    margin: 20px 0px 0px 10%;
+
+
+}
+
+/* header hover  */
+
+
+.header .right li .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background: #232323;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 10px;
+    font-family: verdana;
+    letter-spacing: 4px;
+}
+
+.header .right li .about {
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background: #232323;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 10px;
+    font-family: verdana;
+    letter-spacing: 4px;
+}
+
+.header .right li .Games {
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background: #232323;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 10px;
+    font-family: verdana;
+    letter-spacing: 4px;
+}
+
+.header .right li .New {
+    position: absolute;
+    top: 50%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background: #232323;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 10px;
+    font-family: verdana;
+    letter-spacing: 4px;
+}
+
+.header .right li .Contact {
+    position: absolute;
+    top: 50%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background: #232323;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 10px;
+    font-family: verdana;
+    letter-spacing: 4px;
+}
+
+.header .right li a:before,
+.header .right li a:after,
+.header .right li a span:before,
+.header .right li a span:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    transition: 1s;
+    mix-blend-mode: hue;
+}
+
+.header .right li a:before {
+    top: -1px;
+    left: -1px
+}
+
+.header .right li a:after {
+    top: -1px;
+    right: -1px;
+}
+
+.header .right li a span:before {
+    bottom: -1px;
+    left: -1px
+}
+
+.header .right li a span:after {
+    bottom: -1px;
+    right: -1px
+}
+
+.header .right li a:hover:before,
+.header .right li a:hover:after,
+.header .right li a:hover span:before,
+.header .right li a:hover span:after {
+    width: calc(180px/2);
+    height: calc(50px/2)
+}
+
+
+
+
+
+
+
+/* section 3  */
+.section3 {
+    width: 100%;
+}
+
+.section3 h1 {
+    color: rgb(240, 45, 110);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section3 .container h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 2s all ease;
+}
+
+.section3 .container .item img {
+    width: 100%;
+}
+
+.section3 .container .item {
+    /* background-color: palegreen; */
+    height: 300px;
+    width: 100%;
+}
+
+
+
+
+
+
+/* section 4  */
+
+
+.section2 {
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section2 h1 {
+    font-size: 38px;
+    font-weight: 400;
+    color: darkblue;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+}
+
+.section2 .parth {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px 12px;
+    margin-top: 0px;
+}
+
+.section2 .Air {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(red);
+}
+
+.section2 .Air:hover i {
+    background-color: darkblue;
+}
+
+.section2 .Air i {
+
+    background-color: #e8485d;
+    border-radius: 50%;
+    padding: 28px;
+
+
+}
+
+.section2 .Air h1 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 12px;
+}
+
+.section2 .Air p {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: center;
+    opacity: 0.5;
+    color: black;
+}
+
+.section2 button {
+    color: black;
+    padding: 10px 12px 10px 12px;
+    margin-bottom: 10px;
+}
+
+.section2 .Air button {
+    color: #f9e3e6;
+    font-size: 15px;
+
+}
+
+.section2 .Air button {
+    background-color: #efedf4;
+    color: rgb(220, 32, 32);
+    border: 2px solid rgb(241, 129, 129);
+}
+
+.section2 .Air:hover button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    transition: .5s all ease-in-out;
+}
+
+
+/* section 5 */
+
+.section5 .new h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e8485d;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.bbb {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 0px;
+
+}
+
+.cards {
+    width: 85%;
+    position: relative;
+}
+
+.cards img {
+    width: 100%;
+    /* height: 100px; */
+
+}
+
+.slider {
+    background-color: black;
+    position: absolute;
+    bottom: 100%;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .8s;
+    opacity: 0.7;
+}
+
+
+.cards:hover .slider {
+    height: 100%;
+    bottom: 0px;
+
+}
+
+.content {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+
+.content h1 {
+    font-size: 31px;
+    text-transform: lowercase;
+}
+
+.content h4 {
+    font-size: 12px;
+}
+
+/* section6  */
+
+
+.section6 {
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    color: #efedf4;
+}
+
+.section6 .miru .vidhi {
+
+    width: 30%;
+    height: 100px;
+}
+
+.section6 .miru {
+    background-image: url(backgrnd.img);
+    /* background: rgba(0, 0, 0, .8) !important; */
+    filter: brightness(100%);
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.section6 .miru .vidhi .avni {
+  margin-left: 100%;
+  padding-top: 50%;
+  /* border: 2px solid green; */
+  width: 100%;
+}
+.section6 .avni button a{
+
+/* background-color: rgb(34, 45, 101); */
+background-color: transparent;
+color: black;
+padding: 30px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* section 7 */
+
+.section7 .heer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 50px;
+    width: 95%;
+}
+
+.section7 .heer .right {
+    width: 25%;
+    margin-left: 30px;
+
+}
+
+.section7 .heer .right h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    color: #232323;
+    font-weight: 500;
+}
+
+.section7 .heer .right ul li {
+    display: flex;
+    gap: 2px 20px;
+    margin-top: -5px;
+
+}
+
+.section7 .heer .right ul li i {
+    font-size: large;
+    margin-top: 10px;
+    color: #232323;
+    /* border: 1px solid green; */
+}
+
+.section7 .heer .right ul li p {
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #232323;
+}
+
+
+
+
+.section7 .heer .middal {
+    width: 40%;
+}
+
+.section7 .heer .middal h4 {
+    font-size: 23px;
+    font-style: normal;
+    color: #232323;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.section7 .heer .middal .bunny {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px 13px;
+
+}
+
+.section7 .heer .left {
+    width: 26%;
+    margin-left: 20px;
+}
+
+.section7 .heer .left .up {
+    display: flex;
+    margin-top: 30px;
+    gap: 8px;
+    margin-bottom: 21px;
+
+
+}
+
+.section7 .heer .left .up h4 {
+    font-size: 24px;
+    color: #e8485d;
+
+}
+
+.section7 .heer .left .up img {
+    width: 50px;
+    height: 40px;
+}
+
+.section7 .heer .left .down {
+    margin-top: 10px;
+
+}
+
+.section7 .heer .left .down p {
+    font-size: 14px;
+    width: 350px;
+    color: black;
+    line-height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    ;
+}
+
+/* section 8 */
+
+.copyright{
+    text-align: center;
+}
+
+
+
+/* about   */
+
+
+.about-sec-1 {
+    width: 100%;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 0%;
+}
+
+.about-sec-1 .conti .info h2 {
+    text-align: center;
+    /* border: 2px solid gray; */
+     width: 100%;
+    color: #e91e63;
+    margin-bottom: 40px;
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-sec-1 .conti .pg1 {
+    display: flex;
+    width: 99%;
+}
+
+.about-sec-1 .conti .ri1 {
+    width: 49%;
+}
+
+.about-sec-1 .conti .ri1 ul {
+    list-style: none;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.about-sec-1 .pg1 .ri1 ul li i {
+   font-style: normal;
+   height: 40px;
+   width: 40px;
+   background-color: #f3286c;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+   margin-top: 20px;
+  
+
+}
+.about-sec-1 .pg1 .ri1 ul li p{
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 25px
+}
+.about-sec-1 .pg1 .ri1 ul li{
+    display: flex;
+    gap: 30px 30px;
+}
+
+.about-sec-1 .conti .ri2 {
+    width: 49%;
+
+}
+.about-sec-1 .conti .pg1 .ri2 img{
+ height: 350px;
+ border: 1px dotted black;
+ padding:5px;
+ width:550px;
+ opacity: .8;
+ margin-top: 40px;
+ margin-left: 20px;
+ position: relative;
+}
+.about-sec-1 .ri2 h3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border: 2px solid rgb(0, 255, 76);
+    color: #232323;
+} 
+
+
+
+
+  /* IMG ABOUT HOVER  */
+
+
+
+.about-sec-1 .containerA {
+    position: relative;
+    width: 50%;
+    margin-top: 20px;
+  
+  }
+ .about-sec-1 .image {
+    display: block;
+    width: 500px;
+    height: 350;
+    border: 1px dotted black;
+  
+  }
+  
+ .about-sec-1 .overlay {
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    background-color:black;
+    opacity: .5;
+    overflow: hidden;
+    width: 79%;
+    height: 0;
+    transition: .4s;
+    opacity: 0.5;
+  }
+  
+ .about-sec-1 .containerA:hover .overlay {
+    height: 40%;
+    transition: 2s all ease-in-out;
+  }
+  
+.about-sec-1  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+ .about-sec-1 .containerA .overlay .text ul{
+    list-style: none;
+  }
+ .about-sec-1 .containerA .overlay .text h3 {
+   font-size: 30px;
+  
+  }
+ .about-sec-1 .containerA .overlay .text ul li i{
+    color: white;
+    padding: 6px 6px;
+  }
+ .about-sec-1 .containerA .overlay .text p{
+    font-size: 16px;
+    width: 450px;
+  }
+
+
+  /* about-sec-2  */
+
+
+ .maher{
+    height: auto;
+    width: 100%;
+    margin-top: 650px;
+    /* border: 2px solid palegreen; */
+
+ }
+ .maher .about-sec-2{
+    display: flex;
+    width: 100%;
+ }
+ .about-sec-2 .leftA {
+    width: 30%;
+    display: flex;
+ }
+ .about-sec-2 .leftA img{
+    height: 550px;
+    width: 375px;
+    margin-right: 0px;
+
+ }
+ .about-sec-2 .rightB{
+    width: 70%;
+ }
+.about-sec-2 .rightB{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-right: 22px;
+}
+.about-sec-2 .rightB .m1{
+    height: 275px;
+    width: 290px;
+    margin-left: -2px;   
+}
+.maher .about-sec-2 .rightB .m1 img{
+ height: 50px;
+ width: 50px;
+ margin-top: 30px;
+ margin-left: 40%;
+ line-height:5;
+}
+.maher .about-sec-2 .rightB .m1 h3{
+    text-align: center;
+    margin-top: 10px;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+.maher .about-sec-2 .rightB .m1 p{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    opacity: .7;
+    line-height: 2;
+}
+.about-sec-2 .rightB .m2 img{
+    height: 275px;
+    width: 292px;
+    margin-left: -2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

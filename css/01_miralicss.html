@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrattion form</title>
+    <link rel="icon" href="https://img.freepik.com/free-icon/logo_318-195518.jpg?w=2000">
+    <link rel="stylesheet" href="ases1.css">
+</head>
+<body>
+    <p class="p1">Student Registration Form</p>
+    <div class="mainn">
+        <form action="#">
+            <!-- for all labels -->
+            <div class="d1">
+                <label for="f1">First Name:</label><br> <br>
+                <label for="f2">Last Name:</label><br> <br>
+                <label for="f3">Email:</label> <br> <br>
+                <label for="f4">Mobile:</label> <br>
+                <label for="f5">Gender:</label> <br>
+                <label for="f6">Date Of Birth:</label> <br><br>
+                <label for="f7">Address:</label><br> <br><br> <br><br> <br><br> <br>
+                <label for="f8">City:</label><br> <br>
+                <label for="f9">Area PIN:</label><br> <br>
+                <label for="f10">State:</label><br>
+                <label for="f11">Qualification:</label><br> <br>
+                <label for="f12">Specialization:</label><br> <br> <br> <br>
+                <label for="f13">Password:</label> <br><br>
+            </div>
+
+
+            <div class="d2">
+                <input type="text" name="" id="f1" placeholder="Enter your first name" minlength="3" maxlength="6" required style="height: 30px; width: 100%;">
+                <br><br>
+                <input type="text" name="" id="f2" placeholder="Enter your last name" required style="height: 30px; width: 100%;">
+                <br><br>
+                <input type="email" name="" id="f3" placeholder="it should contain @." maxlength="10" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="height: 30px; width: 100%;"> <br><br>
+                <input type="tel" name="" id="f4" placeholder="only 10 digits allowed" required style="height: 30px; width: 100%;"> <br><br>
+                <input type="radio" name="" id="f5">Male
+                <input type="radio" name="" id="ff">Female <br><br>
+                <input type="date" name="" id="f6" required style="height: 30px; width: 100%;"> <br><br>
+                <textarea name="" id="f7" cols="30" rows="10" required></textarea> <br><br>
+                <input type="text" name="" id="f8" required style="height: 30px; width: 100%;"> <br><br>
+                <input type="tel" name="" id="f9" required style="height: 30px; width: 100%;"> <br><br>
+                <input type="text" name="" id="f10" required style="height: 30px; width: 100%;"> <br><br>
+                <select id="f11" name="" class="qua" required style="height: 30px; width: 100%;">
+                    <option value="" required style="height: 30px; width: 100%;">select qualification</option>
+                    <option value="">10th pas</option>
+                    <option value="">12th pass</option>
+                    <option value="">Graduation</option>
+                    <option value="">Post Graduation</option>
+                </select> <br><br>
+                <input type="checkbox" name="" id="f12" class="spe1">
+                <label for="">Computer Science</label> <br>
+                <input type="checkbox" name="" id="f12" class="spe2">
+                <label for="">Information Technology</label> <br>
+                <input type="checkbox" name="" id="f12" class="spe3">
+                <label for="">Computer Architecture </label> <br>
+                <input type="checkbox" name="" id="f12" class="spe4">
+                <label for="">Computer Science</label>
+                 <br><br>
+                <input type="password" name="" id="f13" class="pass" required style="height: 30px; width: 100%;">
+            </div>
+            <button>Register</button> <br><br>
+        </form>
+    </div>
+</body>
+</html>

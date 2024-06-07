@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:pink;
+            border: 4px solid black;
+            /* height: 1000px;
+            width: 1000px; */
+            display: grid;
+            /* grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+            text-align: center;
+            font-size: xx-large;
+           
+
+
+
+        }
+        .item{
+            background-color: chartreuse;
+            border: 2px solid darkmagenta;
+         }
+         .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+         }
+         .item4{
+           /* grid-row-start: 1;
+           grid-row-end: 2; */
+           grid-row: 1 / span3;
+           grid-column: 3;
+
+         }
+         .item7{
+            grid-column: 2 / span2 ;
+            grid-row: 1;
+         }
+
+
+         .container1{
+            background-color: aqua;
+            border: 5px solid #800080;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 25px;
+            column-gap: 25px;
+            display: grid;
+            height: 800px;
+            width: 800px;
+
+         }
+         .item1{
+            background-color: darkblue;
+            border: 8px solid rgb(38, 39, 37);
+
+
+         }
+         .item2 .h2{
+            grid-column: 2 /span2;
+            grid-row: 3;
+         }
+
+
+    
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item item7">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <hr>
+
+    <div class="container1">
+        <div class="item1 ">1</div>
+        <div class="item2 h1">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6 h6">6</div>
+        <div class="item7 ">7</div>
+        <div class="item8">8</div>
+    
+
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranform</title>
+    <style>
+        .d{
+            background-color: rgb(94, 128, 183);
+            height: 100px;
+            width:100px ;
+        }
+        .d:hover{
+            margin-top: 20px;
+            background-color: aquamarine;
+            height: 100px;
+            width: 160px;
+            transition:4s all ease;
+
+            /* all property are avilebal :
+             transition:4s all ease;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-property: none;
+            transition-timing-function: linear; */
+        }
+        .easein{
+            margin-top: 20px;
+            background-color: rgb(105, 122, 207);
+            height: 100px;
+            width:50px ;
+        }
+        .easein:hover{
+            background-color: aquamarine;
+            height: 100px;
+            width: 160px;
+            transition:5s all ease-in ;
+        }
+        .easeout{
+            margin-top: 30px;
+            background-color: rgb(105, 122, 207);
+            height: 100px;
+            width:50px ;
+        }
+        .easeout:hover{
+            background-color: aquamarine;
+            height: 100px;
+            width: 160px;
+            transition:8s height ease-out ;
+        }
+        .easeinout{
+            margin-top: 30px;
+            background-color: rgb(105, 122, 207);
+            height: 100px;
+            width:50px ;
+        }
+        .easeinout:hover{
+            background-color: aquamarine;
+            height: 130px;
+            width: 180px;
+            transition:6s width ease-in-out ;
+        }
+        .linear{
+            margin-top: 30px;
+            background-color: rgb(105, 122, 207);
+            height: 100px;
+            width:50px ;
+        }
+        .linear:hover{
+            background-color: aquamarine;
+            height: 130px;
+            width: 180px;
+            transition:8s all linear ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="d">ease</div>
+    <div class="easein">easein</div>
+    <div class="easeout">easeout</div>
+    <div class="easeinout">easeinout</div>
+    <div class="linear">linear</div>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .parth{
+            height: 200px;
+            width: 200px;
+            border-radius: 30%;
+            border-top: 4px solid lime;
+            border-left: 2px solid green;
+            border-right: 2px solid palevioletred;
+            border-bottom: 4px solid purple;
+            margin-top: 100px;
+            margin-left: 200px;
+            animation: moni;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+           animation-direction: normal;
+           animation-fill-mode: forwards;
+           animation-iteration-count: 4s;
+        }
+        @keyframes moni{
+            /* from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            } */
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .heer{
+            margin-top: 150px;
+            margin-left: 150px;
+            height: 200px;
+            width: 200px;
+            background-color: darkblue;
+            animation: ex1;
+            animation-duration: 3s;
+            animation-iteration-count: 2s;
+        }
+        @keyframes ex1{
+            from{
+                background-color: aqua;
+            }
+            to{
+                background-color: chocolate;
+            }
+        }
+
+
+        .maher{
+            width: 200px;
+            height: 200px;
+            margin-top: 150px;
+            margin-left: 150px;
+            margin-bottom: 150px;
+            background-color: rgb(224, 130, 130);
+            position: relative;
+            animation-name: ex2;
+            animation-duration: 4s;
+            animation-iteration-count: 5s;
+        }
+        @keyframes ex2{
+            0%{
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: rgb(226, 160, 17);
+                left: 200px;
+                top: 0px;
+            }
+            50%{
+                background-color: rgb(184, 227, 12);
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background-color: rgb(231, 41, 16);
+                left: 200px;
+                top: 200px;
+            }
+            100%{
+                background-color: rgb(217, 17, 147);
+                left:0px;
+                top: 200px;
+            }
+            
+        }
+
+
+        .mirali{
+           width: 200px;
+           height: 200px;
+           margin-top: 150px;
+           margin-left: 150px;
+           margin-bottom: 150px;
+           background-color: red;
+           position: relative;
+           animation-name: ex3;
+           animation-duration: 4s;
+           animation-iteration-count: 2;
+           animation-direction: alternate-reverse; 
+        }
+        @keyframes ex3{
+            0%   {
+                background-color:red; 
+                 left:0px;
+                  top:0px;
+                }
+            25%  {
+                background-color: yellow;
+                 left:200px; 
+                 top:0px;
+                }
+            50%  {
+                background-color:blue; 
+                left:200px;
+                 top:200px;
+                }
+            75%  {
+                background-color:green;
+                 left:0px; 
+                 top:200px;
+                }
+            100% {background-color:red; 
+                left:0px; 
+            }
+        }
+
+
+        .jiya{
+            height: 200px;
+            width: 200px;
+            border-radius: 60%;
+            border-top: 4px double rgb(62, 17, 224);
+            border-left: 2px double rgb(15, 245, 15);
+            border-right: 2px dotted rgb(86, 10, 239);
+            border-bottom: 4px solid rgb(36, 219, 39);
+            margin-top: 100px;
+            margin-left: 200px;
+            animation: ex4;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+           animation-direction: normal;
+           animation-fill-mode: forwards;
+           animation-iteration-count: infinite;
+
+        }
+        @keyframes ex4{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+
+        .earth{
+            height: 300px;
+            width: 300px;
+            top: 200px;
+            left: 200px;
+            margin-bottom: 150px;
+            animation: moni;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            position: relative;
+        }
+        .m1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 3px dotted rgb(243, 14, 163);
+            height: 250px;
+            width:250px;
+            animation: moni;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            /* animation-delay: 1s; */
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+
+        .m2{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            border: 3px double rgb(38, 13, 224);
+            height: 170px;
+            width: 170px;
+            animation: moni;
+            animation-timing-function: linear;
+            animation-duration:5s;
+            /* animation-delay: 1s; */
+            animation-direction:normal;
+            animation-iteration-count: infinite;
+
+        }
+
+        .m3{
+            position: absolute;
+            top: 67px;
+            left: 67px;
+            border: 3px solid rgb(50, 48, 45);
+            height: 90px;
+            width: 90px;
+            animation: moni;
+            animation-timing-function: linear;
+            animation-duration:7s;
+            /* animation-delay: 1s; */
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes moni {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        .north{
+            height: 300px;
+            width: 300px;
+            top: 200px;
+            left: 200px;
+            margin-bottom: 250px;
+            animation:mona;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            position: relative;
+        }
+
+        .s1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 50%;
+            border-top: 7px dotted purple;
+            height: 250px;
+            width:250px;
+            animation: mona;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+
+        .s2{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            border-radius: 50%;
+            border-bottom: 6px dotted purple;
+            height: 170px;
+            width: 170px;
+            animation: mona;
+            animation-timing-function: linear;
+            animation-duration:6s;
+            /* animation-delay: 1s; */
+            animation-direction:normal;
+            animation-iteration-count: infinite;
+
+        }
+
+        .s3{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            border-radius: 50%;
+            border-right: 5px dotted purple;
+            height: 100px;
+            width: 100px;
+            animation: mona;
+            animation-timing-function: linear;
+            animation-duration:4s;
+            /* animation-delay: 1s; */
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+
+        }
+        .s4{
+            position: absolute;
+    top: 105px;
+    left: 106px;
+    border-radius: -5%;
+    border: 5px dotted purple;
+    height: 30px;
+    width: 30px;
+    animation: mona;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    /* animation-delay: 1s; */
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+        }
+
+        @keyframes mona{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+
+        }
+  
+
+
+
+        .west{
+            height: 500px;
+            width: 500px;
+            top: 300px;
+            left: 300px;
+            margin-bottom: 300px;
+            animation:rikin;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            position: relative;
+
+        }
+        .p1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 20%;
+            border: 7px dotted purple;
+            height: 250px;
+            width:250px;
+            animation: mona;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+        .p2{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            border-radius: 40%;
+            border: 6px dotted purple;
+            height: 170px;
+            width: 170px;
+            animation: mona;
+            animation-timing-function: linear;
+            animation-duration:6s;
+            /* animation-delay: 1s; */
+            animation-direction:normal;
+            animation-iteration-count: infinite;
+        }
+
+        .p3{
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            /* border-radius: 80%; */
+            background-color: rgb(200, 156, 241);
+            box-shadow: inset;
+            box-sizing: border-box;
+            border-right: 4px solid green;
+            border-left: 4px solid green;
+            border-bottom: 6px double rgb(12, 14, 12);
+            border-top: 6px double rgb(12, 14, 12);
+            height: 100px;
+            width: 100px;
+            animation: mona;
+            animation-timing-function: linear;
+            animation-duration:6s;
+            /* animation-delay: 1s; */
+            animation-direction:normal;
+            animation-iteration-count: infinite;
+        }
+
+     @keyframes rikin{
+        from{
+                transform: rotate(0deg);
+                color: blueviolet;
+            }
+            to{
+                transform: rotate(360deg);
+                color: chartreuse;
+            }
+     }
+        
+
+
+    </style>
+</head>
+<body>
+    <p>example1</p>
+    <div class="parth"></div>
+    <br><br><br>
+
+
+
+    <hr>
+    <p>example2</p>
+    <h1 class="heer"></h1>
+    <br><br><br>
+
+    <hr>
+    <p>example3</p>
+    <h2 class="maher"></h2>
+    <br><br><br>
+
+    <hr>
+    <p>example4</p>
+    <h3 class="mirali"></h3>
+    <br><br><br>
+
+    <hr>
+    <p>example5</p>
+    <h4 class="jiya"></h4>
+    <br><br><br>
+
+    <hr>
+
+
+    <div class="earth">
+        <div class="m1"></div>
+        <div class="m2"></div>
+        <div class="m3"></div>
+        <div class="m4"></div>
+    </div>
+    <br><br><br>
+
+
+    <hr>
+
+    <div class="north">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+        <div class="s4"></div>
+    </div>
+    <br><br><br><br>
+
+
+    <hr>
+    <div class="west">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+
+    </div>
+
+
+    <br><br><br><br>
+    <hr>
+
+   <div class="nest">
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div>
+</div>
+
+
+</body>
+</html>

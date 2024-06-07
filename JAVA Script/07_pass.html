@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD</title>
+</head>
+<body>
+    <input type="password" name="" id="pass">
+   <button id="show">show</button>
+   <button id="hide">hide</button>
+
+
+    <script>
+
+
+  let pass = document.getElementById("pass")
+  let show = document.getElementById("show")
+  let hide = document.getElementById("hide")
+ 
+  show.addEventListener("click",function () {
+    console.log("heyyy baby");
+    pass.type = "text";
+  })
+  hide.addEventListener("click",function () {
+    console.log("yes");
+    pass.type = "password";
+  })
+
+ 
+
+
+
+    // let pass = document.getElementById("pass")
+    // let show = document.getElementById("show")
+    // let hide = document.getElementById("hide")
+    // let Show = document.getElementById("Show")
+
+
+    
+    // Show.addEventListener("click",function(){
+     
+
+    //  if(pass.type == "password"){
+    //      pass.type = "text";
+    //      Show.textContent ="Hide"
+    //  }else{
+    //      pass.type = "password";
+    //      Show.textContent ="Show"
+    //  }
+    // })
+
+
+
+
+
+    </script>
+</body>
+</html>

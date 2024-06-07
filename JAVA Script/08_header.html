@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   header{
+    display: flex;
+    flex-direction: unset;
+    width: 100%;
+    justify-content: space-around;
+    background-color: chartreuse;
+   }
+   ul{
+    list-style: none;
+    display: flex;
+    flex-direction: unset;
+    width: 100%;
+    justify-content: space-around;
+   }
+   a{
+    text-decoration: none;
+   }
+   button{
+    display: none;
+   }
+   .bunny{
+    margin-left: -100px;
+   }
+   @media(max-width:576px){
+    header{
+        width: 100%;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+    button{
+        display: block;
+    }
+    a{
+        text-decoration: none;
+        margin: 0px;
+    }
+   }
+
+
+    </style> 
+</head>
+<body>
+   <header>
+     <ul id="Home" class="Home">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Signup</a></li>
+     </ul>
+     <button id="btn">Save</button>
+     <button id="cls">X</button>
+
+
+     <!-- toggal button   -->
+     <button id="moni">moni</button>
+   </header>
+   <script>
+    let btn = document.getElementById("btn");
+    let cls = document.getElementById("cls");
+    let Home = document.getElementById("Home");
+
+
+    let moni = document.getElementById("moni");
+    
+
+
+    btn.addEventListener("click",function () {
+        // console.log("hello");
+        Home.classList.add("bunny");  
+    })
+    cls.addEventListener("click",function () {
+        // console.log("hey");
+        Home.classList.remove("bunny");
+    })
+
+    // ToggleEvent 
+    moni.addEventListener("click",function () {
+        // console.log("hi");
+        Home.classList.add("bunny");
+    })
+
+
+
+   </script>
+</body>
+</html>

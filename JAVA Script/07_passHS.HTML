@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="" id="pass">
+   <button id="btn">password</button>
+
+   <script>
+    let pass= document.getElementById("pass")
+  let btn = document.getElementById("btn")
+
+btn.addEventListener("click",function () {
+    if (pass.type =="password"){
+        pass.type="text";
+
+    }
+    else{
+        pass.type="password";
+    }
+})
+
+   </script>
+</body>
+</html>

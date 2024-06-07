@@ -1,0 +1,145 @@
+  <1>   What are the new tags added in HTML5?
+
+   ANS:       HTML5 introduced several new tags that enhanced the structure and functionality 
+           of web pages. Here are some of the significant tags added in HTML5:
+
+           (1) <header>: Defines the header section of a document or a section.
+           (2)<nav>: Represents a set of navigation links.
+            (3)<article>: Defines an independent and self-contained piece of content.
+            (4)<section>: Represents a standalone section of a document.
+            (5)<aside>: Defines content that is tangentially related to the main content.
+            (6)<footer>: Defines the footer section of a document or a section.
+            (7)<figure>: Represents self-contained content, such as images, diagrams, code snippets, etc.
+            (8)<figcaption>: Provides a caption or description for the content within a <figure> element.
+            (9)<main>: Specifies the main content of a document.
+            (10)<time>: Represents a specific time or a range of time.
+            (11)<mark>: Highlights or marks specific text within the document.
+            (12)<progress>: Represents the progress of a task or process.
+            (13)<meter>: Represents a scalar measurement within a known range.
+            (14)<datalist>: Specifies a set of predefined options for an input element.
+            (15)<output>: Represents the result of a calculation or user action.
+            (16)<canvas>: Provides a drawing surface for graphics and animations.
+            (17)<video>: Embeds a video into an HTML document.
+            (18)<audio>: Embeds audio content into an HTML document.
+            (19)<source>: Specifies multiple media resources for media elements like <video> and <audio>.
+            (20)<details>: Defines additional details that the user can view or hide.
+            These are just a few examples of the new tags introduced in HTML5. HTML5 also brought improvements to existing tags and introduced new attributes and APIs to enhance web development.
+
+
+ <2>   How to embed audio and video in a webpage?  
+    
+  ANS:  The HTML5 <audio> and <video> tags make it simple to add media to a website.
+        You need to set src attribute to identify the media source and include a 
+        controls attribute so the user can play and pause the media.
+            
+       # Embedding Audio:
+
+        Prepare your audio file in a compatible format like MP3, WAV, or OGG.
+        Place the audio file in the same directory as your HTML file or provide the correct path to the file.  
+        
+  EXAMPLE:
+    <audio controls>
+    <source src="path_to_audio_file.mp3" type="audio/mpeg">
+    <source src="path_to_audio_file.ogg" type="audio/ogg">
+    <source src="path_to_audio_file.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio>
+
+    the above code, the <audio> element is used to embed the audio file. The <source> elements specify different formats of the audio file, allowing the browser to choose the appropriate one based on compatibility. The controls attribute adds basic audio controls like play, pause, and volume. If the browser doesn't support the <audio> element or any of the specified formats, the text "Your browser does not support the audio element." will be displayed.
+
+        #Embedding Video:
+
+        Prepare your video file in a compatible format like MP4, WebM, or OGG.
+        Place the video file in the same directory as your HTML file or provide the correct path to the file.
+
+EXAMPLE: 
+    <video controls>
+    <source src="path_to_video_file.mp4" type="video/mp4">
+    <source src="path_to_video_file.webm" type="video/webm">
+    <source src="path_to_video_file.ogg" type="video/ogg">
+    Your browser does not support the video element.
+   </video>
+
+   the <video> element is used to embed the video file. The <source> elements specify different formats of the video file. The browser will choose the compatible format based on the supported codecs. The controls attribute adds video controls like play, pause, volume, and fullscreen. If the browser doesn't support the <video> element or any of the specified formats, the text "Your browser does not support the video element.
+
+<3>   Semantic element in HTML5?
+
+ ANS:     Semantic HTML elements are those that clearly describe their meaning in a  
+          human- and machine-readable way. Elements such as <header> , <footer> and 
+          <article> are all considered semantic because they accurately describe the 
+         purpose of the element and the type of content that is inside them.   
+
+
+        # semantic elements in HTML5 include #
+        
+       (1) <header>: Represents the introductory content or a container for a group of 
+                    introductory elements.
+       (2) <nav>: Defines a section containing navigation links.
+       (3) <main>: Represents the main content of the document.
+       (4) <article>: Represents a self-contained composition, such as a blog post, 
+                     article, or news story.
+       (5) <section>: Represents a thematic grouping of content within the document.
+       (6) <aside>: Defines content that is tangentially related to the main content,
+                    such as sidebars or pull quotes.
+       (7)<footer>: Represents the footer of a section or the entire document, typically
+                    containing information about the author, copyright details, or contact information.
+       (8)<figure>: Represents self-contained content, such as images, illustrations, diagrams,
+                    code snippets, etc.
+       (9)<figcaption>:  Represents the caption or description for a <figure> element.
+       (10)<time>:  Represents a specific time or a range of time.
+       (11)<blockquote>:  Indicates a section that is quoted from another source.
+       (12)<cite>:  Represents the title of a work, such as a book, movie, or a publication.
+
+
+  <4>      Canvas and SVG tags? 
+
+ ANS:      The <canvas> and <svg> tags are both HTML elements used for drawing graphics 
+           on a web page, but they have different approaches and capabilities.
+
+          # <canvas> tag:
+                     The <canvas> tag provides a drawing surface through JavaScript. It is a bitmap-based graphics technology where you can programmatically draw and manipulate pixels. Here are some key points about the <canvas> tag:
+
+         # It requires JavaScript to draw and manipulate the graphics.
+         # The content of the <canvas> element is rendered using a JavaScript API called the Canvas API.
+         # You can draw shapes, lines, text, and images using methods provided by the Canvas API.
+         # content is rasterized, meaning it is composed of pixels and doesn't retain its
+         #individual graphical elements.
+          #  Since it deals with pixels, scaling or resizing the canvas can result in pixelation.
+          #  It is well-suited for real-time graphics, animations, and complex visual effects.
+          #  Canvas elements can be styled using CSS, but the actual drawing is done programmatically.
+          #  Example usage of the <canvas> tag:   
+
+       EXAMPLE: <canvas id="myCanvas" width="500" height="300"></canvas>
+
+      # <svg> tag:
+                The <svg> tag is a vector-based graphics technology that uses XML syntax to define graphics. It describes the shapes, lines, and text as objects with properties. Here are some key points about the <svg> tag:
+                    
+        #  It is a part of the Scalable Vector Graphics (SVG) standard and allows for 
+           resolution-independent graphics.
+        # Graphics in <svg> are defined using XML tags like <circle>, <rect>, <line>, etc.
+        # You can apply styles to the SVG elements using CSS.
+        # The content of the <svg> element can be interactive and manipulable using JavaScript.
+        #  Since it is vector-based, the graphics retain their individual elements and can be scaled #without loss of quality.
+        #It is suitable for static images, icons, charts, and illustrations.
+
+    EXAMPLE:      
+      <svg width="500" height="300">
+        <circle cx="100" cy="100" r="50" fill="red" />
+        <rect x="200" y="50" width="100" height="200" fill="blue" />
+      </svg>
+      
+      In summary, the <canvas> tag is suitable for real-time graphics and complex animations, while the <svg> tag is more suitable for static images and scalable illustrations. The choice between them depends on the specific requirements of your project.
+        
+            
+            
+            
+            
+            
+            
+            
+
+ 
+
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Booking Form</title>
+    <style>
+        .text{
+            border: 2px solid grey;
+            height: 450px;
+            width: 400px;
+            padding-left: 5%;
+            
+        }
+        #slotSection {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <h1 style="margin-top: 9%;">Restaurant Booking Form</h1>
+        <form id="bookingForm">
+            <label for="bookingChoice"  >Choice of booking:</label>
+            <select id="bookingChoice" name="bookingChoice" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="FullDay">Full day booking</option>
+                <option value="HalfDay">Half day booking</option>
+                <option value="Hourly">Hourly booking</opti9on>
+            </select><br><br>
+
+            <label for="userName">User name:</label>
+            <input type="text" id="userName" name="userName" required style=" margin-left: 12%;"><br><br>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" required style=" margin-left: 3%;"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style=" margin-left: 19%;"><br><br>
+
+            <label for="noOfPersons">No of persons:</label>
+            <input type="number" id="noOfPersons" name="noOfPersons" required style=" margin-left: 6%;"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required style=" margin-left: 21%;"><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" style=" margin-left: 20%;"><br><br>
+
+            <div id="slotSection">
+                <label for="slot">Slot:</label>
+                <select id="slot" name="slot">
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                </select><br><br>
+            </div>
+
+            <input type="submit" value="Submit"style=" margin-left: 20%; margin-top:8%">
+        </form>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script>
+        const form = document.getElementById("bookingForm");
+        const slotSection = document.getElementById("slotSection");
+
+        form.addEventListener("change", function () {
+            const bookingChoice = document.getElementById("bookingChoice").value;
+
+            if (bookingChoice === "HalfDay") {
+                slotSection.style.display = "block";
+            } else {
+                slotSection.style.display = "none";
+            }
+        });
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const message = document.getElementById("message");
+
+            // Retrieve and process form data here
+            // Example: you can create an object to hold the data
+            const bookingData = {
+                bookingChoice: document.getElementById("bookingChoice").value,
+                userName: document.getElementById("userName").value,
+                mobileNumber: document.getElementById("mobileNumber").value,
+                email: document.getElementById("email").value,
+                noOfPersons: document.getElementById("noOfPersons").value,
+                date: document.getElementById("date").value,
+                time: document.getElementById("time").value,
+                slot: document.getElementById("slot").value
+            };
+
+            // Display the data as needed
+            message.innerHTML = "Booking Details:<br>" + JSON.stringify(bookingData, null, 2);
+        });
+    </script>
+</body>
+
+</html>

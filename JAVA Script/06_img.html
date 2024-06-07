@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="on">on</button>
+    <img src="download.png" alt="" id="img">
+    <button id="off">off</button>
+
+    <button id="up">up</button>
+    <img src="imaged.jpg" alt="" id="img1">
+    <button id="down">down</button>
+    
+    <script>
+    let on = document.getElementById("on")
+    let off = document.getElementById("off")
+    let img = document.getElementById("img")
+
+   on.addEventListener("click",function () {
+      console.log("hello");
+      img.src="download.jpjj.jpg";
+
+   }) 
+   off.addEventListener("click",function () {
+       console.log("hey pinki");
+       img.src="download.png";
+   })
+
+let up = document.getElementById("up")
+let down = document.getElementById("down")
+let img1 = document.getElementById("img1")
+up.addEventListener("click" , function() {
+    console.log("heer");
+    img1.src="imgl.jpg";
+})
+down.addEventListener("click" ,function () {
+    console.log("maher");
+    img1.src="imaged.jpg";
+})
+
+
+
+
+    </script>
+</body>
+</html>

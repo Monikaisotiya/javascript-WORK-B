@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> dom html </title>
+</head>
+
+<body>
+    <!-- <input type="number" name="" id="input1">
+    <input type="number" name="" id="input2">
+    <input type="number" name="" id="input3">
+    <button id="btn">check</button>
+    <p id="para"></p>
+
+    <script>
+        let m1 = document.getElementById("input1");
+        let m2 = document.getElementById("input2");
+        let m3 = document.getElementById("input3");
+
+        let btn = document.getElementById("btn")
+        let para = document.getElementById("para")
+
+        btn.addEventListener("click", function () {
+            console.log("hello beby ");
+            if (Number(m1.value) < Number(m2.value) && Number(m2.value) < Number(m3.value)) {
+                console.log("input2 is max");
+                para.innerHTML="input1 ia max"
+            }
+            else if (Number(m1.value) < Number(m2.value) && Number(m3.value) < Number(m1.value)) {
+                console.log("input1 is max");
+                para.innerHTML="input2 is max"
+            }
+            else if (Number(m2.value)<Number(m1.value) && Number(m3.value)<Number(m2.value)){
+                console.log("input1 is max");
+                para.innerHTML="input3 is max"
+            }
+            else{
+                console.log("both are equall");
+                para.innerHTML="all are max"
+            }
+            })
+
+
+    </script>
+ -->
+  <input type="number" name="" id="gol1">
+  <input type="number" name="" id="gol2">
+  <input type="number" name="" id="gol3">
+  <input type="number" name="" id="gol4">
+  <input type="number" name="" id="gol5">
+  <button id="inp"> pick up </button>
+  <!-- <p id="btn"> lesson </p> -->
+
+  <script>
+       let r1 = document.getElementById("gol1");
+       let r2 = document.getElementById("gol2");
+       let r3 = document.getElementById("gol3");
+       let r4 = document.getElementById("gol4");
+       let r5 = document.getElementById("gol5");
+
+       let inp = document.getElementById("inp");
+    //    let btn = document.getElementById("btn");
+
+       inp.addEventListener("click" , function () {
+        console.log(" hey bunny how r u ");
+        // console.log(" i m fine my girl");
+       })
+ if(Number(r1.value)<Number(r2.value) && Number(r2.value)<Number(r3.value) && 
+ Number(r4.value)<Number(r5.value) && Number(r3.value)<Number(r5.value)){
+    console.log("gol3 is max");
+
+ }
+
+ else if(Number(r1.value)<Number(r4.value) && Number(r2.value)<Number
+ (r3.value) && Number(r4.value)<Number(r5.value) && Number(r3.value)<Number(r5.value)) {
+    console.log("gol5 is max");
+ }
+
+ else  if (Number(r3.value)<Number(r1.value) && Number(r1.value)
+ <Number(r2.value) && Number(r2.value)<Number(r4.value) && Number(r3.value)<Number(r5.value)){
+    console.log("gol3 is min");
+ }
+
+ else {
+    console.log("both are same");
+ }
+
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>

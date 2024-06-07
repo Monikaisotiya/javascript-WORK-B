@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- css  -->
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.green.css">
+
+    <!-- js  -->
+
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.js"></script>
+<style>
+.item{
+    background-color: palegreen;
+    height: 200px;
+    width: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+   <div class="container">
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        <div class="item"><img src="banner2 (1).jpg" alt=""></div>
+        
+    </div>
+
+   </div>
+    
+    <script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        items : 4,
+        margin :30,
+        loop : true,
+        autoplay : true,
+        autoplayTimeout :2000,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+        
+    })
+  })
+
+
+
+
+    </script>
+</body>
+</html>
